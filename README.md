@@ -1,8 +1,11 @@
 # NYC Taxi Fare Estimation Regression Model - Data Consulting Project
 
 **Project Status**: In Progress
+
 **Framework**: PACE (Prepare, Analyze, Construct, Execute)
+
 **Client**: New York City Taxi & Limousine Commission (TLC)
+
 **Consulting Firm**: Automatidata
 
 ## Project Overview
