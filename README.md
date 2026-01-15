@@ -38,8 +38,8 @@ The execution phase will involve deploying the model into a user-friendly app, a
 * **Understand The Data**: Completed using Python
 * **Exploratory Data Analysis**: Completed using Python
 * **Statistical Tests**: Completed using Python
-* **Regression Modeling**: Pending
-* **Machine Learning Model(s)**: Pending
+* **Regression Modeling**: Completed using Python
+* **Machine Learning Model(s)**: Completed using Python
 
 ## Technologies Used
 
