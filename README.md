@@ -1,6 +1,6 @@
 # NYC Taxi Fare Estimation Regression Model - Data Consulting Project
 
-**Project Status**: In Progress
+**Project Status**: Completed
 
 **Framework**: PACE (Prepare, Analyze, Construct, Execute)
 
@@ -48,7 +48,6 @@ The execution phase will involve deploying the model into a user-friendly app, a
 
 ## Next Steps
 
-* Process and prepare the data for model training
 * Develop and fine-tune the regression model to predict taxi fares
 * Integrate the model into the app for real-time fare estimation
 * Conduct user testing and refine the model based on feedback
