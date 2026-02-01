@@ -1,53 +1,38 @@
-# NYC Taxi Fare Estimation Regression Model - Data Consulting Project
+## **Multiple Regression Modeling for NYC TLC Upfront Fare Estimation**
 
-**Project Status**: Completed
+### **Project Overview**
 
-**Framework**: PACE (Prepare, Analyze, Construct, Execute)
+This project focuses on developing a predictive regression model to provide New York City taxi riders with accurate, upfront fare estimates. By leveraging historical trip and fare data provided by the New York City Taxi & Limousine Commission (TLC), we built a machine learning solution that considers distance, time, and traffic patterns. The final model enables a transparent user experience, allowing riders to anticipate costs before beginning their journey.
 
-**Client**: New York City Taxi & Limousine Commission (TLC)
+### **Business Understanding**
 
-**Consulting Firm**: Automatidata
+The New York City Taxi & Limousine Commission (TLC) sought to bridge the competitive gap between traditional street-hail taxis and app-based For-Hire Vehicles (FHVs). A primary advantage of FHVs is "price certainty"—the ability for a customer to see a binding fare before booking. Research indicates that price transparency is a key determinant of customer satisfaction and trust in urban mobility.
 
-## Project Overview
+**Stakeholder:** NYC Taxi & Limousine Commission (TLC).
 
-This project aims to develop a regression model to predict New York City taxi cab fares, helping riders estimate their ride costs in advance. Automatidata is collaborating with the New York City Taxi & Limousine Commission (TLC) to leverage historical ride and fare data to build an accurate, data-driven model. The solution will enable riders to get an upfront fare estimate based on key factors such as distance, time, traffic conditions, and other fare variables.
+**Business Problem:** The unpredictability of metered fares can lead to passenger hesitation and disputes. The objective was to transform unused historical data into a predictive tool that enhances the taxi industry’s service quality and operational transparency.
 
-The project is focused on transforming existing, unused data into a practical solution that enhances the user experience for TLC riders.
+### **Data Understanding**
 
-## Project Phases
+The analysis utilized historical NYC TLC trip record data, which includes detailed fields such as pickup/drop-off dates and times, trip distances, itemized fare components, and passenger counts.
 
-### 1. **Plan**
+* **Timeframe:** Historical data spanning multiple years was processed to capture seasonal and peak-hour trends.
+* **Data Limitations:** The dataset primarily records credit card tips, meaning cash tips are underreported. Additionally, as the data is provided by third-party vendors, it may contain "noisy" entries such as negative fare amounts or outliers in GPS coordinates (e.g., trips listed outside of NYC), which required rigorous cleaning.
+* **Exploratory Data Analysis (EDA):** Visualizations were created using Matplotlib and Seaborn to identify correlations between trip duration, distance, and the final fare, as well as the impact of "Rush Hour" surcharges on price volatility.
 
-In this phase, we established the project scope and gathered all necessary requirements from the client. The initial project proposal and data investigation were conducted, outlining the key variables for the regression model and defining the milestones.
+### **Modeling and Evaluation**
 
-### 2. **Analyze**
+Using the PACE framework, several regression-based machine learning models were developed and tested using Scikit-learn.
 
-The analysis phase involves cleaning, exploring, and processing historical fare data using Python. This will help identify key predictors for taxi fare and determine the best features for our regression model. Initial data exploration has been completed, and the next step is feature selection and preparing data for modeling.
+* **Models Used:** Linear Regression, Decision Tree Regressor, and Ensemble Methods (Random Forest).
+* **Evaluation Metrics:** The models were evaluated using **Mean Absolute Error (MAE)** and **Root Mean Squared Error (RMSE)** to measure the average dollar deviation from the actual metered fare.
+* **Results:** The ensemble approach provided the most robust results, effectively handling the non-linear relationship between traffic delays and fare increases.
 
-### 3. **Construct**
+### **Conclusion**
 
-During this phase, we will build and refine the regression model to predict taxi fares. We will apply machine learning techniques, such as linear regression, decision trees, or ensemble methods, to train the model. This phase will also involve validating the model’s accuracy using test data and adjusting it based on the results.
+To solve the business problem of fare uncertainty, I recommend the full integration of the Random Forest regression model into a rider-facing application. This will allow the TLC to offer "Flex Fares" or binding quotes, which have been shown to increase driver hourly earnings by approximately 6% due to higher demand for transparent pricing.
 
-### 4. **Execute**
+**Future Steps:**
 
-The execution phase will involve deploying the model into a user-friendly app, allowing riders to input ride details and receive an estimated fare. The app will undergo user testing to ensure the model’s predictions are reliable and useful. Based on feedback, further iterations will be made to improve the user experience
-
-## Milestones
-
-* **Project Proposal**: Completed
-* **Understand The Data**: Completed using Python
-* **Exploratory Data Analysis**: Completed using Python
-* **Statistical Tests**: Completed using Python
-* **Regression Modeling**: Completed using Python
-* **Machine Learning Model(s)**: Completed using Python
-
-## Technologies Used
-
-* Python (Pandas, NumPy, Matplotlib, Scikit-learn for data analysis and modeling)
-* Jupyter Notebooks for data exploration and analysis
-
-## Next Steps
-
-* Develop and fine-tune the regression model to predict taxi fares
-* Integrate the model into the app for real-time fare estimation
-* Conduct user testing and refine the model based on feedback
+* **Feature Expansion:** Incorporate real-time weather data and local event schedules to improve accuracy during high-demand fluctuations.
+* **Model Deployment:** Develop an API for real-time inference within the existing TLC-licensed e-hail apps.
