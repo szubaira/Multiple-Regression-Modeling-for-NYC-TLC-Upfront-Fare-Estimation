@@ -27,6 +27,8 @@ Using the PACE framework, several regression-based machine learning models were 
 * **Models Used:** Linear Regression, Decision Tree Regressor, and Ensemble Methods (Random Forest).
 * **Evaluation Metrics:** The models were evaluated using **Mean Absolute Error (MAE)** and **Root Mean Squared Error (RMSE)** to measure the average dollar deviation from the actual metered fare.
 * **Results:** The ensemble approach provided the most robust results, effectively handling the non-linear relationship between traffic delays and fare increases.
+<img width="448" height="331" alt="Screen Shot 2026-02-01 at 15 36 48" src="https://github.com/user-attachments/assets/01e2a8f5-f06a-41b9-b409-3232001af244" />
+<img width="447" height="195" alt="Screen Shot 2026-02-01 at 15 37 32" src="https://github.com/user-attachments/assets/0795384f-7457-43c6-93d4-c698f2806e33" />
 
 ### **Conclusion**
 
