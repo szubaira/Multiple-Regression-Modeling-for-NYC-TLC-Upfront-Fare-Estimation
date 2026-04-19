@@ -2,7 +2,7 @@
 
 ### **Project Overview**
 
-This project focuses on developing a predictive regression model to provide New York City taxi riders with accurate, upfront fare estimates. By leveraging historical trip and fare data provided by the New York City Taxi & Limousine Commission (TLC), we built a machine learning solution that considers distance, time, and traffic patterns. The final model enables a transparent user experience, allowing riders to anticipate costs before beginning their journey.
+This project focuses on developing a predictive regression model to provide New York City taxi riders with accurate, upfront fare estimates. By leveraging historical trip and fare data provided by the New York City Taxi & Limousine Commission (TLC), I built a machine learning solution that considers distance, time, and traffic patterns. The final model enables a transparent user experience, allowing riders to anticipate costs before beginning their journey.
 
 ### **Business Understanding**
 
